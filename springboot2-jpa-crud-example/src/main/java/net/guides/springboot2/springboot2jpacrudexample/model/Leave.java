@@ -1,5 +1,6 @@
 package net.guides.springboot2.springboot2jpacrudexample.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -14,7 +15,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "leaves")
-public class Leave {
+public class Leave  implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

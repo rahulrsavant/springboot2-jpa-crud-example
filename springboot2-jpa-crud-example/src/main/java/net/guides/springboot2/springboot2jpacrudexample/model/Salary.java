@@ -1,5 +1,7 @@
 package net.guides.springboot2.springboot2jpacrudexample.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,7 +14,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "salaries")
-public class Salary {
+public class Salary implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

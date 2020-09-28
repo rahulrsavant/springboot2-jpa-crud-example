@@ -1,8 +1,9 @@
 package net.guides.springboot2.springboot2jpacrudexample.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class LeaveDTO {
+public class LeaveDTO  implements Serializable {
 
 
 	private long id;

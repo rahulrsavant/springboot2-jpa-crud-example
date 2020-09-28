@@ -24,7 +24,8 @@ import net.guides.springboot2.springboot2jpacrudexample.model.SalaryDTO;
 import net.guides.springboot2.springboot2jpacrudexample.repository.SalaryRepository;
 import net.guides.springboot2.springboot2jpacrudexample.service.SalaryService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/v1")
 public class SalaryController {

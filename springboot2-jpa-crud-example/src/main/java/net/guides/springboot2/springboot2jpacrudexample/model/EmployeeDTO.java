@@ -1,8 +1,9 @@
 package net.guides.springboot2.springboot2jpacrudexample.model;
 
 import java.util.List;
+import java.io.Serializable;
 
-public class EmployeeDTO {
+public class EmployeeDTO implements Serializable{
 	private long id;	
 	private String firstName;	
 	private String lastName;

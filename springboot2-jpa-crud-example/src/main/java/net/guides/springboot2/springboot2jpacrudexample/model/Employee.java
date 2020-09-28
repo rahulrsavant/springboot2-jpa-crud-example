@@ -10,11 +10,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 
 @Entity
 @Table(name = "employees")
-public class Employee {
+public class Employee implements Serializable {
   
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

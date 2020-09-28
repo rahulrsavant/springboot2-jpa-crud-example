@@ -24,7 +24,8 @@ import net.guides.springboot2.springboot2jpacrudexample.model.LeaveDTO;
 import net.guides.springboot2.springboot2jpacrudexample.repository.LeaveRepository;
 import net.guides.springboot2.springboot2jpacrudexample.service.LeaveService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/v1")
 public class LeaveController {
